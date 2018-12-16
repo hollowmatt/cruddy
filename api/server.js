@@ -18,7 +18,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use(bodyParser.json());
+app.use('/business', businessRoute);
 
 app.listen(PORT, function() {
 	console.log('Server running on Port: ', PORT);

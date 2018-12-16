@@ -15,4 +15,4 @@ let Business = new Schema({
 	collection: 'business'
 });
 
-module.exports = mongoos.model('Business', Business);
+module.exports = mongoose.model('Business', Business);

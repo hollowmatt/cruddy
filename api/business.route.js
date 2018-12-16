@@ -4,7 +4,7 @@ const businessRoutes = express.Router();
 let Business = require('./business.model');
 
 //Adder
-businessRoutes.rout('/add').post(function(req,res) {
+businessRoutes.route('/add').post(function(req,res) {
 	let business = new Business(req.body);
 	business.save()
 		.then(business => {
