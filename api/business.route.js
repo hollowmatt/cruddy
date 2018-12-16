@@ -56,8 +56,8 @@ businessRoutes.route('/update/:id').post(function(req,res) {
 
 //delete
 businessRoutes.route('/delete/:id').get(function(req, res) {
-	Business.findByIdAndREmove({_id: req.params.id}, function(err, business) {
-		if(eff) { 
+	Business.findByIdAndRemove({_id: req.params.id}, function(err, business) {
+		if(err) { 
 			res.json(err);
 		} else {
 			res.json('Successfully deleted');
